@@ -8,18 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBAction private func didTapSegment(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            view.backgroundColor = UIColor.white
+        case 1:
+            view.backgroundColor = UIColor.blue
+        case 2:
+            view.backgroundColor = UIColor.yellow
+        default:
+            fatalError("ありえないIndexです")
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
