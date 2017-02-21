@@ -1,7 +1,7 @@
 # UISegmentedControl
 
 ## 概要
-UISegmentedControlクラスです。
+UISegmentedControlいくつかの選択肢の中から１つだけを選択させるセグメントを管理するクラスです。
 
 ## 関連クラス
 UIControl
